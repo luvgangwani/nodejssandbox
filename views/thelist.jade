@@ -1,0 +1,13 @@
+doctype html
+html
+	head
+		title The List
+		link(rel="stylesheet", type = "text/css", href = "/scripts/css/bootstrap.min.css")
+		link(rel="stylesheet", type = "text/css", href = "/scripts/css/bootstrap-theme.min.css")
+	body
+		.container-fluid
+			div.h3.text-center The List 
+			hr
+			ul.list-group
+				each entry, i in result
+					li.list-group-item #{entry.fname} #{entry.lname}
